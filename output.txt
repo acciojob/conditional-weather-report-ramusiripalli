@@ -1,0 +1,26 @@
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+FAIL src/components/__tests__/App.test.js
+  ● Test suite failed to run
+
+    Cannot find module '@testing-library/jest-dom' from 'src/components/__tests__/App.test.js'
+
+      1 | import React from 'react';
+      2 | import { render, screen } from '@testing-library/react';
+    > 3 | import '@testing-library/jest-dom';
+        | ^
+      4 | import App from '../App';
+      5 | import WeatherDisplay from '../WeatherDisplay';
+      6 | 
+
+      at Resolver.resolveModule (D:\0000)JavascriptImp/React assignments/conditional-weather-report-ramusiripalli/node_modules/jest-resolve/build/index.js:307:11)
+      at Object.<anonymous> (D:\0000)JavascriptImp/React assignments/conditional-weather-report-ramusiripalli/src/components/__tests__/App.test.js:3:1)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        64.38 s
+Ran all test suites.
